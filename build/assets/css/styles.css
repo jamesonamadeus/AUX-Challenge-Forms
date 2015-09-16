@@ -1,7 +1,44 @@
 body {
 	font-family: 'Open Sans', 'Merriwearther', sans-serif;
+	background-color: #b3e3ff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
+
+
+/*Main Form*/
+
+.main {
+	margin-left:auto;
+    margin-right:auto;
+	max-width: 90%;
+	background-color: #ffffff;
+
+}
+
+/*Header*/
+header {
+	background-color: #125f77;
+	background: -webkit-linear-gradient(#125f77, #3c8ea6);
+	background: -moz-linear-gradient(#125f77, #3c8ea6);
+	background: linear-gradient(#125f77, #3c8ea6);
+
+}
+
+
+
 
 .sprite {
 	background: url("../assets/images/sprite.png") no-repeat;
 }
+
+label {
+	display: block;
+}
+
+label.sample {
+	display: inline-block;
+}
+
