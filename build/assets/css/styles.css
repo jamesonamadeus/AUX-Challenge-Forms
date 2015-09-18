@@ -76,8 +76,8 @@ legend {
 	font-weight: 700;
 	font-size: 19px;
 	padding-top: 32px;
+	padding-bottom: 3px;
 }
-
 
 /* CSS Counter*/
 
@@ -112,12 +112,6 @@ fieldset > legend:before{
 
 .entryfield {
 	padding: 10px;
-
-}
-
-.entryfield p{
-	margin: 20px 0 16px 0;
-	width: 100%;
 }
 
 label {
@@ -125,10 +119,10 @@ label {
 	display: block;
 	font-family: "Open Sans";
 	font-size: 12px;
-	margin-top: 10px;
 }
 
 input {
+	float: left;
 	border-radius: 5px; 
 	border-width: 0px;
 	border-top: 1px solid #CCCCCC;
@@ -136,12 +130,13 @@ input {
 	font-size: 16px;
 	font-weight: 600;
 	height: 30px;
-	margin-top: 6px;
+	margin: 6px 0px 24px 0px;
 	padding-left: 8px;
 	width: 99%;
+
 }
 
-input#portfolioAddress {
+input#portfolio_address {
 	border-bottom-right-radius: 0px;
 	border-top-right-radius: 0px;
 	display: inline-block;
@@ -157,26 +152,188 @@ label.sample {
 	color: #888888;
 	display: inline-block;
 	font-size: 14px;
-	height: 32px;
-	margin: -6px;
+	margin: 6px 0px 0px -6px;
 	text-align: center;
 	width: 34%;
-    line-height: 2.38;
+    line-height: 0;
     border-left: 1px solid #ebebeb;
+    border-top-width: 1px;
+    padding: 16px 0px 16px 0;
 }
 
-.sprite {
-	background: url("../assets/images/sprite.png") no-repeat;
+input#email {
+	margin-bottom: 06px;
 }
+
+.accounts {
+	padding-bottom: 40px;
+}
+
 
 /*Payment Info*/
-.expMonth{
+
+/*Credit Card Number & Types*/
+#card_number {
+	width: 52%;
+}
+
+p.cctype {
+	display: inline;
+	margin-left: 10px;
+}
+
+.cctype label,
+label.CVC {
+	cursor: pointer;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+input[type="radio"] {
+	left: -9999px;
+	position: absolute;
+}
+
+
+/*CC Styling*/
+/*AMEX*/
+input#cc_amex + label {
+	background: url('../images/sprite.png') no-repeat -1px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_amex:hover + label {
+	background: url('../images/sprite.png') no-repeat 0 0;
+	height: 30px;
+	width: 45px;
+	}
+
+input#cc_amex:checked + label {
+	background: url('../images/sprite.png') no-repeat -1px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+/*VISA*/
+input#cc_visa + label {
+	background: url('../images/sprite.png') no-repeat -48px -40px;
+	height: 32px;
+	width: 45px;
+}
+
+input#cc_visa:hover + label {
+	background: url('../images/sprite.png') no-repeat -48px 0;
+	height: 30px;
+	width: 45px;
+}
+
+input#cc_visa:checked + label {
+	background: url('../images/sprite.png') no-repeat -48px 0;
+	height: 30px;
+	width: 45px;
+}
+
+/*DISCOVER*/
+input#cc_discover + label {
+	background: url('../images/sprite.png') no-repeat -96px -40px;
+	height: 32px;
+	width: 45px;
+	}
+
+input#cc_discover:hover + label {
+	background: url('../images/sprite.png') no-repeat -96px 0;
+	height: 30px;
+	width: 45px;
+}
+
+input#cc_discover:checked + label {
+	background: url('../images/sprite.png') no-repeat -96px -40px;
+	height: 32px;
+	width: 45px;
+}
+
+/*MASTERCARD*/
+input#cc_mastercard + label {
+	background: url('../images/sprite.png') no-repeat -144px -40px;
+	height: 32px;
+	width: 45px;
+}
+
+input#cc_mastercard:hover + label {
+	background: url('../images/sprite.png') no-repeat -144px 0;
+	height: 30px;
+	width: 45px;
+}
+
+input#cc_mastercard:checked + label {
+	background: url('../images/sprite.png') no-repeat -144px 0;
+	height: 30px;
+	width: 45px;
+}
+
+
+/*Security Code*/
+input#security_code{
+	width: 16%;
+}
+
+input#security_code + label {
+	background: url('../images/sprite.png') no-repeat 0 -124px;
+	height: 32px;
+	width: 62px;
+}
+
+label.CVC {
+	margin-left: 10px;
+	margin-top: 6px;
+	cursor: default;
+}
+
+
+/*Expiration Date*/
+#expiration_date {
+	color: #6f7070;
+	display: block;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 26px;
+	padding: 0;
+	padding-bottom: 10px;
+
+}
+
+p.exppicker {
+	margin-top: -22px;
+}
+
+#exp_month,
+#exp_year {
+	display: inline;
+	border: 1px solid #d5d7d7;
+	border-radius: 5px;
+	height: 28px;
+	color: #5a5a5a;
+	font-size: 12px;
+}
+
+.expiration_month{
 	visibility: hidden;
 }
 
-.expYear {
+.expiration_year {
 	visibility: hidden;
 }
+
+/*Validation*/
+input:required:invalid, {
+    background-image: url('../images/sprite.png') no-repeat -1px -167px;
+	width: 19px;
+	height: 19px;
+  }
+
+
 
 /*button*/
 
@@ -197,7 +354,6 @@ button {
     font-size: 16px;
     text-align: center;
     line-height: 2.2;
-
 }
 
 

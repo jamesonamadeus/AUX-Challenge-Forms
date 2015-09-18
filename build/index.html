@@ -42,12 +42,12 @@
             <div class="entryfield">
 
             <p>
-               <label for="portfolio_Name">Portfolio name</label>
+               <label for="portfolio_name">Portfolio name</label>
                <input type="text" id="portfolio_Name" name="portfolioName" aria-required="true" required>
             </p>
             <p>
-               <label for="portfolioAddress">Portfolio address</label>
-                  <input type="text" id="portfolioAddress" name="portfolioAddress" aria-required="true" required>
+               <label for="portfolio_address" class="port_address">Portfolio address</label>
+                  <input type="text" id="portfolio_address" name="portfolioAddress" aria-required="true" required>
                   <label for="portfolioAddress" class="sample">.sample.com</label>
             </p>
 
@@ -63,21 +63,21 @@
 
          <div class="entrycontainer">
             <div class="entryfield">
-
-            <p>
-               <label for="name">Name</label>
-               <input type="text" id="name" name="name" aria-required="true" required>
-            </p>
-            <p>
-               <label for="email">Email</label>
-               <input type="text" id="email" name="email" aria-describedby="emailtext" aria-required="true" required>
-               <label for="email" id="emailtext">NOTE: We'll never share your email, promise.</label>
-            </p>
-            <p>
-               <label for="password">Password</label>
-               <input type="password" id="password" name="password" aria-required="true" required>
-            </p>
-
+            <div class="accounts">
+               <p>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" aria-required="true" required>
+               </p>
+               <p>
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" aria-describedby="emailtext" aria-required="true" required>
+                  <label for="email" id="emailtext">NOTE: We'll never share your email, promise.</label>
+               </p>
+               <p>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" aria-required="true" required>
+               </p>
+            </div>
             </div>
          </div>
       </fieldset>
@@ -92,24 +92,40 @@
             <div class="entryfield">
          
             <p>
-               <label for="card_number">Card Number</label>
+               <label for="card_number" >Card Number</label>
 
                <input type="text" pattern="[0-9]{13,16}" id="card_number" name="cardNumber" aria-required="true"  required>
             </p>
-            <p>
+            <p class="cctype">
+
+               <input type="radio" id="cc_amex" name="CCtype" value="AMEX" aria-required="true"  required>
+               <label for="cc_amex" class="ccamex">AMEX</label>
+
+               <input type="radio" id="cc_visa" name="CCtype" value="VISA" aria-required="true"  required>
+               <label for="cc_visa">VISA</label>
+
+               <input type="radio" id="cc_discover" name="CCtype" value="DISCOVER" aria-required="true"  required>
+               <label for="cc_discover">DISCOVER</label>
+
+               <input type="radio" id="cc_mastercard" name="CCtype" value="MASTERCARD" aria-required="true"  required>
+               <label for="cc_mastercard">MASTERCARD</label>
+
+            </p>
+            <p class="ccsecurity">
                <label for="security_code">Security Code</label>
-               <input type="text" maxlength="4" id="security_code" name="securityCode" aria-required="true" required>
+               <input type="text" id="security_code" maxlength="4" minlength="3" name="securityCode" aria-required="true" required>
+               <label for="security_code" class="CVC">CVC</label>
             </p>
 
 
          <!-- Expiration Date -->
 
-         <legend>Expiration date</legend>
+         <legend id="expiration_date">Expiration date</legend>
 
-            <p>
-               <label for="expMonth">Month</label>
+            <p class="exppicker">
+               <label for="exp_month" class="expiration_month">Month</label>
 
-                  <select id="expMonth" name="expirationMonth" aria-required="true" required>
+                  <select id="exp_month" name="expirationMonth" aria-required="true" required>
                      <option value="" selected="disabled">Month</option>
                      <option value="01">January</option>
                      <option value="02">February</option>
@@ -125,10 +141,10 @@
                      <option value="12">December</option>
                   </select>
             </p>
-            <p>
-               <label for="expYear">Year</label class="expirationYear">
+            <p class="exppicker">
+               <label for="exp_year" class="expiration_year">Year</label class="expirationYear">
 
-                  <select id="expYear" name="expirationYear" aria-required="true" required>
+                  <select id="exp_year" name="expirationYear" aria-required="true" required>
                      <option value="" selected="disabled">Year</option>
                      <option value="2015">2015</option>
                      <option value="2016">2016</option>
