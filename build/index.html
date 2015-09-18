@@ -27,7 +27,7 @@
 
          <header role="banner">
          <h1>Sign up for Whoo!</h1>
-         <h2>50 projects, 500 images, 10 videos, domain binding, and technical support</h2>
+         <p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
          </header>
 
       <form id="myform" action="" method="post">
@@ -38,7 +38,8 @@
       <fieldset>
          <legend>First, name your portfolio</legend>
 
-         <div class="entryfield">
+         <div class="entrycontainer">
+            <div class="entryfield">
 
             <p>
                <label for="portfolio_Name">Portfolio name</label>
@@ -46,10 +47,11 @@
             </p>
             <p>
                <label for="portfolioAddress">Portfolio address</label>
-               <input type="text" id="portfolioAddress" name="portfolioAddress" aria-required="true" required>
-               <label for="portfolioAddress" class="sample">.sample.com</label>
+                  <input type="text" id="portfolioAddress" name="portfolioAddress" aria-required="true" required>
+                  <label for="portfolioAddress" class="sample">.sample.com</label>
             </p>
 
+            </div>
          </div>
       </fieldset>	
 
@@ -59,7 +61,8 @@
       <fieldset>
          <legend>Now, enter your account details</legend>
 
-         <div class="entryfield">
+         <div class="entrycontainer">
+            <div class="entryfield">
 
             <p>
                <label for="name">Name</label>
@@ -75,6 +78,7 @@
                <input type="password" id="password" name="password" aria-required="true" required>
             </p>
 
+            </div>
          </div>
       </fieldset>
 
@@ -84,7 +88,8 @@
       <fieldset>
          <legend>Finally, enter your payment information</legend>
 
-         <div class="entryfield">
+         <div class="entrycontainer">
+            <div class="entryfield">
          
             <p>
                <label for="card_number">Card Number</label>
@@ -137,10 +142,14 @@
                      <option value="2024">2024</option>
                   </select>
             </p>
+            </div>
          </div>
       </fieldset>	
+         <div class="button">
 
-         <button type="submit">Create your portfolio</button>
+            <button type="submit">Create your portfolio</button>
+
+         </div>
 
       </form>
 

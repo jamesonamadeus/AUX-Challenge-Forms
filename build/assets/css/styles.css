@@ -1,44 +1,203 @@
 body {
-	font-family: 'Open Sans', 'Merriwearther', sans-serif;
-	background-color: #b3e3ff;
-	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-color: #b3e3ff;
 	background-size: cover;
+	counter-reset: fieldset;
+	font-family: 'Open Sans', 'Merriwearther', sans-serif;
+}
+
+
+/*Main Form*/
+.main {
+	background-color: #transparent;
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 88%;
+	border-radius: 5px;
+}
+
+
+/*Header*/
+header {
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	background-color: #125f77;
+	background: -moz-linear-gradient(#3c8ea6, #125f77);
+	background: -webkit-linear-gradient(#3c8ea6, #125f77);
+	background: linear-gradient(#3c8ea6, #125f77);
+	border-color: #125f77;
+	border-style: solid;
+	border-width: 1px;
+	padding: 24px 40px;
+	text-rendering: optimizeLegibility !important;
+}
+
+header h1 {
+	color: #fcfcfc;
+	font-family: "Merriweather";
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0px;
+	letter-spacing: 1px;
+	text-shadow: 2px 2px #125f77;	
+}
+
+header p {
+	color: #b1e3ff;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0px;
+	text-shadow: 2px 2px #125f77;	
 }
 
 
 /*Main Form*/
 
-.main {
-	margin-left:auto;
-    margin-right:auto;
-	max-width: 90%;
+#myform {
 	background-color: #ffffff;
+	padding: 0px 20px 0px 20px;
+	border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+fieldset {
+	border-width: 0px;
+	padding: 0 20px 0 20px;
+}
+
+legend {
+	font-family: "Merriweather";
+	color: #0a5e78;
+	font-weight: 700;
+	font-size: 19px;
+	padding-top: 32px;
+}
+
+
+/* CSS Counter*/
+
+fieldset > legend:before{
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	background-color: #52a3d4;
+	border-color: #ffffff;
+	border-width: 5px;
+	border: 5px solid;
+	color: #ffffff;
+	content: counter(fieldset);
+	counter-increment: fieldset;
+	display: inline-block;
+	font-weight: 400;
+	height: 28px;
+	line-height: 1.5;
+	margin-left: -63px;
+	margin-right: 22px;
+	text-align: center;
+	width: 28px;
+}
+
+
+/*Form Entry Containers*/
+
+.entrycontainer {
+	background-color: #f3f5f5;
+	border-radius: 10px;
+	padding: 0px 30px 14px 30px;
+}
+
+.entryfield {
+	padding: 10px;
 
 }
 
-/*Header*/
-header {
-	background-color: #125f77;
-	background: -webkit-linear-gradient(#125f77, #3c8ea6);
-	background: -moz-linear-gradient(#125f77, #3c8ea6);
-	background: linear-gradient(#125f77, #3c8ea6);
-
+.entryfield p{
+	margin: 20px 0 16px 0;
+	width: 100%;
 }
 
+label {
+	color: #6f7070;
+	display: block;
+	font-family: "Open Sans";
+	font-size: 12px;
+	margin-top: 10px;
+}
 
+input {
+	border-radius: 5px; 
+	border-width: 0px;
+	border-top: 1px solid #CCCCCC;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	height: 30px;
+	margin-top: 6px;
+	padding-left: 8px;
+	width: 99%;
+}
 
+input#portfolioAddress {
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	display: inline-block;
+	width: 65%;
+}
+
+label.sample {
+	background-color: #fafafa;
+	border-bottom-right-radius: 5px;
+	border-color: #cbcbcb;
+	border-top-right-radius: 5px;
+	border-top: 1px solid #CCCCCC;
+	color: #888888;
+	display: inline-block;
+	font-size: 14px;
+	height: 32px;
+	margin: -6px;
+	text-align: center;
+	width: 34%;
+    line-height: 2.38;
+    border-left: 1px solid #ebebeb;
+}
 
 .sprite {
 	background: url("../assets/images/sprite.png") no-repeat;
 }
 
-label {
-	display: block;
+/*Payment Info*/
+.expMonth{
+	visibility: hidden;
 }
 
-label.sample {
-	display: inline-block;
+.expYear {
+	visibility: hidden;
 }
+
+/*button*/
+
+.button{
+	text-align: center;
+	padding: 28px 0 40px 0px;
+}
+
+button {
+	height: 38px;
+    width: 218px;
+    font-family: "merriweather";
+    color: #ffffff;
+    background-color: #7d9a2f;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #cccccc;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2.2;
+
+}
+
 
