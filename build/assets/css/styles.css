@@ -12,10 +12,10 @@ body {
 /*Main Form*/
 .main {
 	background-color: #transparent;
+	border-radius: 5px;
 	margin-left:auto;
 	margin-right:auto;
 	max-width: 88%;
-	border-radius: 5px;
 }
 
 
@@ -41,8 +41,8 @@ header h1 {
 	font-family: "Merriweather";
 	font-size: 36px;
 	font-weight: 700;
-	margin: 0px;
 	letter-spacing: 1px;
+	margin: 0px;
 	text-shadow: 2px 2px #125f77;	
 }
 
@@ -60,9 +60,9 @@ header p {
 
 #myform {
 	background-color: #ffffff;
-	padding: 0px 20px 0px 20px;
 	border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 0px 20px 0px 20px;
 }
 
 fieldset {
@@ -71,12 +71,12 @@ fieldset {
 }
 
 legend {
-	font-family: "Merriweather";
 	color: #0a5e78;
-	font-weight: 700;
+	font-family: "Merriweather";
 	font-size: 19px;
-	padding-top: 32px;
+	font-weight: 700;
 	padding-bottom: 3px;
+	padding-top: 32px;
 }
 
 /* CSS Counter*/
@@ -122,10 +122,10 @@ label {
 }
 
 input {
-	float: left;
 	border-radius: 5px; 
-	border-width: 0px;
 	border-top: 1px solid #CCCCCC;
+	border-width: 0px;
+	float: left;
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 600;
@@ -133,7 +133,6 @@ input {
 	margin: 6px 0px 24px 0px;
 	padding-left: 8px;
 	width: 99%;
-
 }
 
 input#portfolio_address {
@@ -147,22 +146,22 @@ label.sample {
 	background-color: #fafafa;
 	border-bottom-right-radius: 5px;
 	border-color: #cbcbcb;
+	border-left: 1px solid #ebebeb;
 	border-top-right-radius: 5px;
+	border-top-width: 1px;
 	border-top: 1px solid #CCCCCC;
 	color: #888888;
 	display: inline-block;
 	font-size: 14px;
+	line-height: 0;
 	margin: 6px 0px 0px -3px;
+	padding: 16px 0px 16px 0;
 	text-align: center;
 	width: 34%;
-    line-height: 0;
-    border-left: 1px solid #ebebeb;
-    border-top-width: 1px;
-    padding: 16px 0px 16px 0;
 }
 
 input#email {
-	margin-bottom: 06px;
+	margin-bottom: 6px;
 }
 
 .accounts {
@@ -207,7 +206,7 @@ input#cc_amex:hover + label {
 	background: url('../images/sprite.png') no-repeat 0 0;
 	height: 30px;
 	width: 45px;
-	}
+}
 
 input#cc_amex:checked + label {
 	background: url('../images/sprite.png') no-repeat -1px -40px;
@@ -239,7 +238,7 @@ input#cc_discover + label {
 	background: url('../images/sprite.png') no-repeat -96px -40px;
 	height: 32px;
 	width: 45px;
-	}
+}
 
 input#cc_discover:hover + label {
 	background: url('../images/sprite.png') no-repeat -96px 0;
@@ -285,9 +284,9 @@ input#security_code + label {
 }
 
 label.CVC {
+	cursor: default;
 	margin-left: 10px;
 	margin-top: 6px;
-	cursor: default;
 }
 
 
@@ -299,8 +298,8 @@ label.CVC {
 	font-size: 12px;
 	font-weight: 400;
 	margin-top: 26px;
-	padding: 0;
 	padding-bottom: 10px;
+	padding: 0;
 
 }
 
@@ -310,12 +309,12 @@ p.exppicker {
 
 #exp_month,
 #exp_year {
-	display: inline;
-	border: 1px solid #d5d7d7;
 	border-radius: 5px;
-	height: 28px;
+	border: 1px solid #d5d7d7;
 	color: #5a5a5a;
+	display: inline;
 	font-size: 12px;
+	height: 28px;
 }
 
 .expiration_month{
@@ -331,18 +330,13 @@ input:required:invalid {
 	background-image: url('../images/invalid.png');
 	background-position: right;
 	background-repeat: no-repeat;
-	-moz-box-shadow: none;
 }
 
 input:required:valid {
 	background-image: url('../images/valid.png');
 	background-position: right;
 	background-repeat: no-repeat;
-	-moz-box-shadow: none;
 }
-
-
-
 
 
 /*button*/
@@ -353,17 +347,17 @@ input:required:valid {
 }
 
 button {
+	background-color: #7d9a2f;
+	border-color: #cccccc;
+	border-radius: 5px;
+	border-width: 1px;
+	color: #ffffff;
+	font-family: "merriweather";
+	font-size: 16px;
 	height: 38px;
-    width: 218px;
-    font-family: "merriweather";
-    color: #ffffff;
-    background-color: #7d9a2f;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: #cccccc;
-    font-size: 16px;
-    text-align: center;
-    line-height: 2.2;
+	line-height: 2.2;
+	text-align: center;
+	width: 218px;
 }
 
 
