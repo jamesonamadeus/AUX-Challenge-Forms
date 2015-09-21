@@ -140,7 +140,7 @@ input#portfolio_address {
 	border-bottom-right-radius: 0px;
 	border-top-right-radius: 0px;
 	display: inline-block;
-	width: 65%;
+	width: 64%;
 }
 
 label.sample {
@@ -152,7 +152,7 @@ label.sample {
 	color: #888888;
 	display: inline-block;
 	font-size: 14px;
-	margin: 6px 0px 0px -6px;
+	margin: 6px 0px 0px -3px;
 	text-align: center;
 	width: 34%;
     line-height: 0;
@@ -327,11 +327,21 @@ p.exppicker {
 }
 
 /*Validation*/
-input:required:invalid, {
-    background-image: url('../images/sprite.png') no-repeat -1px -167px;
-	width: 19px;
-	height: 19px;
-  }
+input:required:invalid {
+	background-image: url('../images/invalid.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	-moz-box-shadow: none;
+}
+
+input:required:valid {
+	background-image: url('../images/valid.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	-moz-box-shadow: none;
+}
+
+
 
 
 
