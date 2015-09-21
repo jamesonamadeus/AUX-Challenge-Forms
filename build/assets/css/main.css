@@ -1,0 +1,195 @@
+
+
+
+/*Payment Info*/
+
+/*Credit Card Number & Types*/
+#card_number {
+	width: 52%;
+}
+
+p.cctype {
+	display: inline;
+	margin-left: 10px;
+}
+
+.cctype label,
+label.CVC {
+	cursor: pointer;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+input[type="radio"] {
+	left: -9999px;
+	position: absolute;
+}
+
+
+/*CC Styling*/
+/*AMEX*/
+input#cc_amex + label {
+	background: url('../images/sprite.png') no-repeat -1px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_amex:hover + label {
+	background: url('../images/sprite.png') no-repeat 0 0;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_amex:checked + label {
+	background: url('../images/sprite.png') no-repeat -1px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+/*VISA*/
+input#cc_visa + label {
+	background: url('../images/sprite.png') no-repeat -48px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_visa:hover + label {
+	background: url('../images/sprite.png') no-repeat -48px 0;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_visa:checked + label {
+	background: url('../images/sprite.png') no-repeat -48px 0;
+	height: 32px;
+	width: 44px;
+}
+
+/*DISCOVER*/
+input#cc_discover + label {
+	background: url('../images/sprite.png') no-repeat -96px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_discover:hover + label {
+	background: url('../images/sprite.png') no-repeat -96px 0;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_discover:checked + label {
+	background: url('../images/sprite.png') no-repeat -96px -40px;
+	height: 32px;
+	width: 44px;
+}
+
+/*MASTERCARD*/
+input#cc_mastercard + label {
+	background: url('../images/sprite.png') no-repeat -144px -40px;
+	height: 32px;
+	width: 45px;
+}
+
+input#cc_mastercard:hover + label {
+	background: url('../images/sprite.png') no-repeat -144px 0;
+	height: 32px;
+	width: 44px;
+}
+
+input#cc_mastercard:checked + label {
+	background: url('../images/sprite.png') no-repeat -144px 0;
+	height: 32px;
+	width: 44px;
+}
+
+
+/*Security Code*/
+input#security_code{
+	width: 16%;
+}
+
+input#security_code + label {
+	background: url('../images/sprite.png') no-repeat 0 -124px;
+	height: 32px;
+	width: 62px;
+}
+
+label.CVC {
+	cursor: default;
+	margin-left: 10px;
+	margin-top: 6px;
+}
+
+
+/*Expiration Date*/
+#expiration_date {
+	color: #6f7070;
+	display: block;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 26px;
+	padding-bottom: 10px;
+	padding: 0;
+
+}
+
+p.exppicker {
+	margin-top: -22px;
+}
+
+#exp_month,
+#exp_year {
+	border-radius: 5px;
+	border: 1px solid #d5d7d7;
+	color: #5a5a5a;
+	display: inline;
+	font-size: 12px;
+	height: 28px;
+}
+
+.expiration_month{
+	visibility: hidden;
+}
+
+.expiration_year {
+	visibility: hidden;
+}
+
+/*Validation*/
+input:required:invalid {
+	background-image: url('../images/invalid.png');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+input:required:valid {
+	background-image: url('../images/valid.png');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+
+/*button*/
+
+.button{
+	text-align: center;
+	padding: 28px 0 40px 0px;
+}
+
+button {
+	background-color: #7d9a2f;
+	border-color: #cccccc;
+	border-radius: 5px;
+	border-width: 1px;
+	color: #ffffff;
+	font-family: "merriweather";
+	font-size: 16px;
+	height: 38px;
+	line-height: 2.2;
+	text-align: center;
+	width: 218px;
+}
+
+

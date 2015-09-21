@@ -11,20 +11,21 @@ body {
 
 /*Main Form*/
 .main {
-	background-color: #transparent;
-	border-radius: 5px;
-	margin-left:auto;
-	margin-right:auto;
-	max-width: 88%;
+	background-color: #b3e3ff;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	padding: 8px 0px 20px 0px;
 }
 
 
 /*Header*/
 header {
-	-moz-border-radius-topleft: 10px;
-	-moz-border-radius-topright: 10px;
-	-webkit-border-top-left-radius: 10px;
-	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 9px;
+	-moz-border-radius-topright: 9px;
+	-webkit-border-top-left-radius: 9px;
+	-webkit-border-top-right-radius: 9px;
 	background-color: #125f77;
 	background: -moz-linear-gradient(#3c8ea6, #125f77);
 	background: -webkit-linear-gradient(#3c8ea6, #125f77);
@@ -32,7 +33,7 @@ header {
 	border-color: #125f77;
 	border-style: solid;
 	border-width: 1px;
-	padding: 24px 40px;
+	padding: 26px 44px 0px 44px;
 	text-rendering: optimizeLegibility !important;
 }
 
@@ -41,139 +42,193 @@ header h1 {
 	font-family: "Merriweather";
 	font-size: 36px;
 	font-weight: 700;
-	letter-spacing: 1px;
 	margin: 0px;
-	text-shadow: 2px 2px #125f77;	
+	text-shadow: 1px 1px #125f77;	
 }
 
 header p {
 	color: #b1e3ff;
 	font-family: "Open Sans";
-	font-size: 13px;
-	font-weight: 400;
-	margin: 0px;
+	font-size: 12px;
+	font-weight: 700;
 	text-shadow: 2px 2px #125f77;	
+	margin: -6px 0px 0px 0px;
+	padding-bottom: 16px;
 }
 
 
-/*Main Form*/
-
-#myform {
-	background-color: #ffffff;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	padding: 0px 20px 0px 20px;
-}
-
-fieldset {
-	border-width: 0px;
-	padding: 0 20px 0 20px;
-}
-
+/*Form Legend & Counter*/
 legend {
+	text-transform: none;
 	color: #0a5e78;
 	font-family: "Merriweather";
-	font-size: 19px;
+	font-size: 18px;
 	font-weight: 700;
-	padding-bottom: 3px;
-	padding-top: 32px;
+	margin: 0px;
+	padding: 0px;
 }
-
-/* CSS Counter*/
 
 fieldset > legend:before{
 	-moz-border-radius: 75px;
 	-webkit-border-radius: 75px;
 	background-color: #52a3d4;
 	border-color: #ffffff;
-	border-width: 5px;
-	border: 5px solid;
+	border: 7px solid;
 	color: #ffffff;
 	content: counter(fieldset);
 	counter-increment: fieldset;
 	display: inline-block;
-	font-weight: 400;
-	height: 28px;
-	line-height: 1.5;
-	margin-left: -63px;
-	margin-right: 22px;
+	font-weight: 700;
+	height: 30px;
+	line-height: 1.8;
+	margin-left: -66px;
+	margin-right: 23px;
 	text-align: center;
-	width: 28px;
+	width: 30px;
+	font-size: 18px;
 }
 
 
 /*Form Entry Containers*/
+#myform {
+	background-color: #ffffff;
+	padding: 22px 24px 22px 24px;
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+}
+
+fieldset {
+	border-width: 0px;
+	padding: 0px 20px 33px 20px;
+}
 
 .entrycontainer {
 	background-color: #f3f5f5;
 	border-radius: 10px;
-	padding: 0px 30px 14px 30px;
+	padding: 22px 36px 30px 36px;
 }
 
 .entryfield {
-	padding: 10px;
+	padding: 8px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
 }
 
 label {
-	color: #6f7070;
+	cursor: default;
+	color: #424242;
 	display: block;
 	font-family: "Open Sans";
 	font-size: 12px;
+	margin: 0px 0px 2px 0px;
 }
 
-input {
-	border-radius: 5px; 
+input[type="text"] {
+	border-radius: 6px; 
 	border-top: 1px solid #CCCCCC;
-	border-left: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
 	float: left;
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 600;
-	height: 30px;
-	margin: 6px 0px 24px 0px;
+	height: 34px;
+	margin: 0px 0px 18px 0px;
 	padding-left: 8px;
-	width: 99%;
+	width: 100%;
+	background: #ffffff;
 }
 
+
+/*Portfolio Entryfield*/
 input#portfolio_address {
 	border-bottom-right-radius: 0px;
 	border-top-right-radius: 0px;
 	display: inline-block;
-	width: 64%;
+	width: 63%;
 }
 
 label.sample {
 	background-color: #fafafa;
 	border-bottom-right-radius: 5px;
 	border-color: #cbcbcb;
-	border-left: 1px solid #ebebeb;
+	border-left: 2px solid #ebebeb;
 	border-top-right-radius: 5px;
 	border-top-width: 1px;
-	border-top: 1px solid #CCCCCC;
+	border-top: 2px solid #CCCCCC;
 	color: #888888;
 	display: inline-block;
 	font-size: 14px;
+	font-weight: 600;
 	line-height: 0;
-	margin: 6px 0px 0px -3px;
-	padding: 16px 0px 16px 0;
+	margin: 0px;
+	padding: 18px 22px 14px 0px;
 	text-align: center;
-	width: 34%;
+	width: 30%;
 }
 
-input#email {
-	margin-bottom: 6px;
+
+/*Account Entryfield*/
+input[type="email"] {
+	border-radius: 6px; 
+	border-top: 1px solid #CCCCCC;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	float: left;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	height: 34px;
+	margin: 0px 0px 6px 0px;
+	padding-left: 8px;
+	width: 100%;
+	background: #ffffff;
+}
+
+label#emailtext {
+	font-size: 11px;
+	color: #7b7b7b;
+	font-weight: 600;
+	padding-bottom: 16px;
+}
+
+input[type="password"] {
+	border-radius: 6px; 
+	border-top: 1px solid #CCCCCC;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	float: left;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 600;
+	height: 34px;
+	padding-left: 8px;
+	width: 100%;
+	background: #ffffff;
 }
 
 .accounts {
-	padding-bottom: 40px;
+	padding-bottom: 36px;
 }
 
 
-/*Payment Info*/
+/*Payment Entryfield*/
 
 /*Credit Card Number & Types*/
 #card_number {
-	width: 52%;
+	width: 53%;
+	margin-top: 4px;
+	margin-bottom: 16px;
+}
+
+label.cc_number {
+	margin: 0px;
 }
 
 p.cctype {
@@ -181,8 +236,7 @@ p.cctype {
 	margin-left: 10px;
 }
 
-.cctype label,
-label.CVC {
+.cctype label {
 	cursor: pointer;
 	display: inline-block;
 	text-indent: -9999px;
@@ -193,136 +247,159 @@ input[type="radio"] {
 	position: absolute;
 }
 
-
 /*CC Styling*/
 /*AMEX*/
 input#cc_amex + label {
-	background: url('../images/sprite.png') no-repeat -1px -40px;
-	height: 32px;
-	width: 44px;
-}
-
-input#cc_amex:hover + label {
-	background: url('../images/sprite.png') no-repeat 0 0;
-	height: 30px;
-	width: 45px;
+	background: url('../images/sprite.png') no-repeat 0px -40px;
+	height: 33px;
+	width: 46px;
 }
 
 input#cc_amex:checked + label {
-	background: url('../images/sprite.png') no-repeat -1px -40px;
-	height: 32px;
-	width: 44px;
+	background: url('../images/sprite.png') no-repeat 0px 0px;
+	height: 33px;
+	width: 46px;
 }
 
 /*VISA*/
 input#cc_visa + label {
 	background: url('../images/sprite.png') no-repeat -48px -40px;
-	height: 32px;
-	width: 45px;
-}
-
-input#cc_visa:hover + label {
-	background: url('../images/sprite.png') no-repeat -48px 0;
-	height: 30px;
-	width: 45px;
+	height: 33px;
+	width: 46px;
 }
 
 input#cc_visa:checked + label {
 	background: url('../images/sprite.png') no-repeat -48px 0;
-	height: 30px;
-	width: 45px;
+	height: 33px;
+	width: 46px;
 }
 
 /*DISCOVER*/
 input#cc_discover + label {
 	background: url('../images/sprite.png') no-repeat -96px -40px;
-	height: 32px;
-	width: 45px;
-}
-
-input#cc_discover:hover + label {
-	background: url('../images/sprite.png') no-repeat -96px 0;
-	height: 30px;
-	width: 45px;
+	height: 33px;
+	width: 46px;
 }
 
 input#cc_discover:checked + label {
-	background: url('../images/sprite.png') no-repeat -96px -40px;
-	height: 32px;
-	width: 45px;
+	background: url('../images/sprite.png') no-repeat -96px 0px;
+	height: 33px;
+	width: 46px;
 }
 
 /*MASTERCARD*/
 input#cc_mastercard + label {
 	background: url('../images/sprite.png') no-repeat -144px -40px;
-	height: 32px;
-	width: 45px;
-}
-
-input#cc_mastercard:hover + label {
-	background: url('../images/sprite.png') no-repeat -144px 0;
-	height: 30px;
-	width: 45px;
+	height: 33px;
+	width: 46px;
 }
 
 input#cc_mastercard:checked + label {
 	background: url('../images/sprite.png') no-repeat -144px 0;
-	height: 30px;
-	width: 45px;
+	height: 33px;
+	width: 46px;
 }
-
 
 /*Security Code*/
-input#security_code{
-	width: 16%;
+.CVC {
+	display: inline-block;
+	text-indent: -9999px;
 }
 
-input#security_code + label {
-	background: url('../images/sprite.png') no-repeat 0 -124px;
-	height: 32px;
-	width: 62px;
+.ccsecurity {
+	float: left;
+	width: 100%;
+}
+
+input#security_code{
+	width: 18%;
+	margin-top: 4px;
 }
 
 label.CVC {
 	cursor: default;
 	margin-left: 10px;
-	margin-top: 6px;
 }
 
+/*input#security_code + label {
+	background: url('../images/sprite.png') no-repeat 0 -81px;
+	height: 33px;
+	width: 70px;
+}*/
+
+input#security_code + label {
+	background: url('../images/sprite.png') no-repeat 0 -124px;
+	height: 33px;
+	width: 62px;
+}
 
 /*Expiration Date*/
 #expiration_date {
-	color: #6f7070;
+	color: #424242;
 	display: block;
 	font-family: "Open Sans";
 	font-size: 12px;
 	font-weight: 400;
-	margin-top: 26px;
-	padding-bottom: 10px;
-	padding: 0;
-
 }
 
-p.exppicker {
-	margin-top: -22px;
+#cc_expiration{
+	margin: 0px;
+	padding-bottom: 30px;
 }
 
 #exp_month,
 #exp_year {
 	border-radius: 5px;
 	border: 1px solid #d5d7d7;
-	color: #5a5a5a;
+	border-top-width: 0px;
+	color: #424242;
 	display: inline;
-	font-size: 12px;
-	height: 28px;
+	font-size: 11px;
+	height: 24px;
+	background-color: #ffffff;
+	background: -moz-linear-gradient(#ffffff, #e9eded);
+	background: -webkit-linear-gradient(#ffffff, #e9eded);
+	background: linear-gradient(#ffffff, #e9eded);
 }
 
-.expiration_month{
-	visibility: hidden;
+p.exppicker_month {
+	float: left;
+	margin-top: -24px;
+	width: 25%;
 }
 
+p.exppicker_year {
+	float: left;
+	margin-top: -24px;
+	margin-left: 10px;
+	width: 14%;
+}
+
+.expiration_month, 
 .expiration_year {
 	visibility: hidden;
+}
+
+/*button*/
+.button{
+	text-align: center;
+}
+
+button {
+	background-color: #7b992b;
+	background: -moz-linear-gradient(#aabd62, #7b992b);
+	background: -webkit-linear-gradient(#aabd62, #7b992b);
+	background: linear-gradient(#aabd62, #7b992b);
+	border-radius: 5px;
+	border: 1px solid #7b992b;
+	color: #ffffff;
+	font-family: "merriweather";
+	font-size: 15px;
+	height: 38px;
+	line-height: 0;
+	text-align: center;
+	text-transform: none;
+	width: 220px;
 }
 
 /*Validation*/
@@ -337,27 +414,3 @@ input:required:valid {
 	background-position: right;
 	background-repeat: no-repeat;
 }
-
-
-/*button*/
-
-.button{
-	text-align: center;
-	padding: 28px 0 40px 0px;
-}
-
-button {
-	background-color: #7d9a2f;
-	border-color: #cccccc;
-	border-radius: 5px;
-	border-width: 1px;
-	color: #ffffff;
-	font-family: "merriweather";
-	font-size: 16px;
-	height: 38px;
-	line-height: 2.2;
-	text-align: center;
-	width: 218px;
-}
-
-
