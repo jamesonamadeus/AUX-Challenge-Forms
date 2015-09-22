@@ -315,7 +315,7 @@ input#cc_mastercard:checked + label {
 	width: 100%;
 }
 
-input#security_code{
+input#security_code {
 	margin-top: 4px;
 	width: 18%;
 }
@@ -323,18 +323,17 @@ input#security_code{
 label.CVC {
 	cursor: default;
 	margin-left: 10px;
-}
-
-/*input#security_code + label {
-	background: url('../images/sprite.png') no-repeat 0 -81px;
-	height: 33px;
-	width: 70px;
-}*/
-
-input#security_code + label {
 	background: url('../images/sprite.png') no-repeat 0 -124px;
 	height: 33px;
 	width: 62px;
+}
+
+label.CVC.amexside {
+	cursor: default;
+	margin-left: 10px;
+	background: url('../images/sprite.png') no-repeat 0 -81px;
+	height: 33px;
+	width: 70px;
 }
 
 /*Expiration Date*/
