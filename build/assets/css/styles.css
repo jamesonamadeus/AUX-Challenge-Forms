@@ -1,11 +1,15 @@
 body {
 	-moz-background-size: cover;
+	-moz-transition:all .2s linear; 
 	-o-background-size: cover;
+	-o-transition:all .2s linear; 
 	-webkit-background-size: cover;
+	-webkit-transition:all .2s linear;
 	background-color: #b3e3ff;
 	background-size: cover;
 	counter-reset: fieldset;
 	font-family: 'Open Sans', 'Merriwearther', sans-serif;
+	transition:all .2s linear; 
 }
 
 
@@ -51,21 +55,21 @@ header p {
 	font-family: "Open Sans";
 	font-size: 12px;
 	font-weight: 700;
-	text-shadow: 2px 2px #125f77;	
 	margin: -6px 0px 0px 0px;
 	padding-bottom: 16px;
+	text-shadow: 2px 2px #125f77;	
 }
 
 
 /*Form Legend & Counter*/
 legend {
-	text-transform: none;
 	color: #0a5e78;
 	font-family: "Merriweather";
 	font-size: 18px;
 	font-weight: 700;
 	margin: 0px;
 	padding: 0px;
+	text-transform: none;
 }
 
 fieldset > legend:before{
@@ -78,6 +82,7 @@ fieldset > legend:before{
 	content: counter(fieldset);
 	counter-increment: fieldset;
 	display: inline-block;
+	font-size: 18px;
 	font-weight: 700;
 	height: 30px;
 	line-height: 1.8;
@@ -85,16 +90,15 @@ fieldset > legend:before{
 	margin-right: 23px;
 	text-align: center;
 	width: 30px;
-	font-size: 18px;
 }
 
 
 /*Form Entry Containers*/
 #myform {
 	background-color: #ffffff;
-	padding: 22px 24px 22px 24px;
-	border-bottom-right-radius: 9px;
 	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	padding: 22px 24px 22px 24px;
 }
 
 fieldset {
@@ -118,8 +122,8 @@ p {
 }
 
 label {
-	cursor: default;
 	color: #424242;
+	cursor: default;
 	display: block;
 	font-family: "Open Sans";
 	font-size: 12px;
@@ -127,11 +131,12 @@ label {
 }
 
 input[type="text"] {
-	border-radius: 6px; 
-	border-top: 1px solid #CCCCCC;
-	border-right-width: 0px;
+	background: #ffffff;
 	border-bottom-width: 0px;
 	border-left-width: 0px;
+	border-radius: 6px; 
+	border-right-width: 0px;
+	border-top: 1px solid #CCCCCC;
 	float: left;
 	font-family: "Open Sans";
 	font-size: 16px;
@@ -140,7 +145,6 @@ input[type="text"] {
 	margin: 0px 0px 18px 0px;
 	padding-left: 8px;
 	width: 100%;
-	background: #ffffff;
 }
 
 
@@ -174,11 +178,12 @@ label.sample {
 
 /*Account Entryfield*/
 input[type="email"] {
-	border-radius: 6px; 
-	border-top: 1px solid #CCCCCC;
-	border-right-width: 0px;
+	background: #ffffff;
 	border-bottom-width: 0px;
 	border-left-width: 0px;
+	border-radius: 6px; 
+	border-right-width: 0px;
+	border-top: 1px solid #CCCCCC;
 	float: left;
 	font-family: "Open Sans";
 	font-size: 16px;
@@ -187,22 +192,22 @@ input[type="email"] {
 	margin: 0px 0px 6px 0px;
 	padding-left: 8px;
 	width: 100%;
-	background: #ffffff;
 }
 
 label#emailtext {
-	font-size: 11px;
 	color: #7b7b7b;
+	font-size: 11px;
 	font-weight: 600;
 	padding-bottom: 16px;
 }
 
 input[type="password"] {
-	border-radius: 6px; 
-	border-top: 1px solid #CCCCCC;
-	border-right-width: 0px;
+	background: #ffffff;
 	border-bottom-width: 0px;
 	border-left-width: 0px;
+	border-radius: 6px; 
+	border-right-width: 0px;
+	border-top: 1px solid #CCCCCC;
 	float: left;
 	font-family: "Open Sans";
 	font-size: 16px;
@@ -210,7 +215,6 @@ input[type="password"] {
 	height: 34px;
 	padding-left: 8px;
 	width: 100%;
-	background: #ffffff;
 }
 
 .accounts {
@@ -222,9 +226,9 @@ input[type="password"] {
 
 /*Credit Card Number & Types*/
 #card_number {
-	width: 53%;
-	margin-top: 4px;
 	margin-bottom: 16px;
+	margin-top: 4px;
+	width: 53%;
 }
 
 label.cc_number {
@@ -312,8 +316,8 @@ input#cc_mastercard:checked + label {
 }
 
 input#security_code{
-	width: 18%;
 	margin-top: 4px;
+	width: 18%;
 }
 
 label.CVC {
@@ -349,17 +353,17 @@ input#security_code + label {
 
 #exp_month,
 #exp_year {
-	border-radius: 5px;
-	border: 1px solid #d5d7d7;
-	border-top-width: 0px;
-	color: #424242;
-	display: inline;
-	font-size: 11px;
-	height: 24px;
 	background-color: #ffffff;
 	background: -moz-linear-gradient(#ffffff, #e9eded);
 	background: -webkit-linear-gradient(#ffffff, #e9eded);
 	background: linear-gradient(#ffffff, #e9eded);
+	border-radius: 5px;
+	border-top-width: 0px;
+	border: 1px solid #d5d7d7;
+	color: #424242;
+	display: inline;
+	font-size: 11px;
+	height: 24px;
 }
 
 p.exppicker_month {
@@ -370,8 +374,8 @@ p.exppicker_month {
 
 p.exppicker_year {
 	float: left;
-	margin-top: -24px;
 	margin-left: 10px;
+	margin-top: -24px;
 	width: 14%;
 }
 
@@ -413,4 +417,102 @@ input:required:valid {
 	background-image: url('../images/valid.png');
 	background-position: right;
 	background-repeat: no-repeat;
+}
+
+/*CSS Media Queries*/
+@media only screen and (max-width: 640px) {
+
+	.main {
+	max-width: 540px;
+	}
+
+	input#portfolio_address {
+		width: 50%;
+	}
+
+	label.sample {
+		padding-right: 10px;
+		width: 44%;
+	}
+
+	#card_number {
+		width: 46%;
+	}
+
+	input#security_code {
+		width: 32%;
+	}
+
+	p.exppicker_month {
+		width: 36%;
+	}
+
+	p.exppicker_year {
+		width: 25%;
+	}
+}
+
+ @media only screen and (max-width: 540px) {
+ 	.main {
+		max-width: 480px;
+	}
+
+	#card_number {
+		margin-bottom: 0px;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	p.cctype {
+		margin-left: 0px;
+		padding-bottom: 20px;
+	}
+
+	.ccsecurity {
+		margin-top: 10px;
+	}
+
+
+}
+
+ @media only screen and (max-width: 400px) {
+ 	.main {
+	max-width: 310px;
+	}
+
+	input#portfolio_address {
+		width: 60%;
+	}
+	#myform {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.entrycontainer {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	label.sample {
+		font-size: 10px;
+		padding-right: 4px;
+		width: 36%;
+	}
+
+	input#security_code {
+		width: 40%;
+	}
+
+	p.exppicker_month {
+		width: 50%;
+	}
+
+	p.exppicker_year {
+		width: 40%;
+	}
+
+	fieldset > legend:before{
+	margin-left: -51px;
+	margin-right: 8px;
+	}
 }
